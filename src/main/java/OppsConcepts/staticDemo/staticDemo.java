@@ -2,10 +2,11 @@ package OppsConcepts.staticDemo;
 
 public class staticDemo {
     static int a=20;
+    static int c=20;
     int b=10;
 
-    static void add(){
-//        System.out.println(a+b);
+    static int add(){
+       return a+c;
     }
       void addition(){
         System.out.println(a+b);
@@ -14,7 +15,8 @@ public class staticDemo {
 
 class rc{
     public static void main(String[] args) {
-        staticDemo s= new staticDemo();
-        s.addition();
+        System.out.println(staticDemo.a);
+        int n = staticDemo.add();
+        System.out.println(n);
     }
 }
